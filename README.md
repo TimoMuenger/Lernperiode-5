@@ -9,8 +9,8 @@ Beim Cookie Click wäre es von Vorteil wenn man den Spielstand speichern könnte
 
 ## 2.5
 
-- [ ] Meinen Code vom Cookie Clicker mit der Datenbank im MSSQL verbinden
-- [ ] 
+- [x] Meinen Code vom Cookie Clicker mit der Datenbank im MSSQL verbinden
+
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
