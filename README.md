@@ -15,13 +15,12 @@ Beim Cookie Click wäre es von Vorteil wenn man den Spielstand speichern könnte
 
 ✍️ Heute habe ich Eine Datenbank und eine Tabelle die alle nötigen Spalten für den Cookie Clicker enthält erstellt. Das Zweite Arbeitspaket habe ich nicht gemacht weil ich es selber nicht herausegefunden habe wie das geht, aber es wird uns nächste Woche von Herrn Colic erklärt.
 
-☝️ Vergessen Sie nicht, Ihr bestehendes Projekt und die Neuerungen von heute hochzuladen. Beschreiben Sie eindeutig, was heute an Code dazugekommen ist.
 
 ## 9.5 Kernfunktionalität
 
-- [ ] ... (dieses AP sollte zur Hälfte offline, also ohne Laptop zu bearbeiten sein — beispielsweise ein Datenmodell?)
-- [ ] ...
-- [ ] ...
+- [ ] Eingabe Name des Spielers als Spalte in Tabelle wie auch im Code erstellen
+- [ ] Meinen Code vom Cookie Clicker mit der Datenbank im MSSQL verbinden
+
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
