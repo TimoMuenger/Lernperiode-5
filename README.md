@@ -9,10 +9,11 @@ Beim Cookie Click wäre es von Vorteil wenn man den Spielstand speichern könnte
 
 ## 2.5
 
-- [x] Meinen Code vom Cookie Clicker mit der Datenbank im MSSQL verbinden
+- [x] Eine Datenbank und Tabelle erstellen im MSSQL
+- [ ] Meinen Code vom Cookie Clicker mit der Datenbank im MSSQL verbinden
 
 
-✍️ Heute habe ich... (50-100 Wörter)
+✍️ Heute habe ich Eine Datenbank und eine Tabelle die alle nötigen Spalten für den Cookie Clicker enthält erstellt. Das Zweite Arbeitspaket habe ich nicht gemacht weil ich es selber nicht herausegefunden habe wie das geht, aber es wird uns nächste Woche von Herrn Colic erklärt.
 
 ☝️ Vergessen Sie nicht, Ihr bestehendes Projekt und die Neuerungen von heute hochzuladen. Beschreiben Sie eindeutig, was heute an Code dazugekommen ist.
 
