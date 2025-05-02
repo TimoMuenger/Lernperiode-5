@@ -5,13 +5,12 @@
 ## Grob-Planung
 
 Wie können Sie Ihr Projekt aus der Lernperiode 4 um eine Persistenz-Lösung erweitern? Was gibt es zu speichern, was für Tabellen brauchen Sie und wie muss der bestehende Code mit diesen interagieren?
-
-> ...
+Beim Cookie Click wäre es von Vorteil wenn man den Spielstand speichern könnte wenn man eine Pause machen will.
 
 ## 2.5
 
-- [ ] ...
-- [ ] ...
+- [ ] Meinen Code vom Cookie Clicker mit der Datenbank im MSSQL verbinden
+- [ ] 
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
