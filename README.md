@@ -20,7 +20,7 @@ Beim Cookie Click wäre es von Vorteil wenn man den Spielstand speichern könnte
 
 - [ ] Eingabe Name des Spielers als Spalte in Tabelle wie auch im Code erstellen
 - [ ] Meinen Code vom Cookie Clicker mit der Datenbank im MSSQL verbinden
-
+- [ ] Machen, dass sich die DB immer richtig aktualisiert und die Spielstände speichert
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
