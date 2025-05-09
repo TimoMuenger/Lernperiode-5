@@ -19,19 +19,18 @@ Beim Cookie Click wäre es von Vorteil wenn man den Spielstand speichern könnte
 ## 9.5 Kernfunktionalität
 
 - [ ] Eingabe Name des Spielers als Spalte in Tabelle wie auch im Code erstellen
-- [ ] Meinen Code vom Cookie Clicker mit der Datenbank im MSSQL verbinden
+- [x] Meinen Code vom Cookie Clicker mit der Datenbank im MSSQL verbinden
 - [ ] Machen, dass sich die DB immer richtig aktualisiert und die Spielstände speichert
 
-✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
+✍️ Heute habe ich Eine Spalte mit dem Spielstandnamen in die Tabelle eingefügt aber noch nicht im Code.
+Auch konnte ich meine Datenbank mit dem Code verbinden, allerdings nicht im MSSQL sondern mit Sqlite.
+Jetzt bin ich gerade dran, einen save und load button zu programmieren, um die Spielstände dann auch zu speichern.
 
 ## 16.5 Kernfunktionalität und Ausbau
 
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [ ] Save button Fehler beheben und fertig programmieren
+- [ ] Load button Fehler beheben und fertig programmieren
+- [ ] Machen, dass man den Spielstandnamen eingeben um zu speichern
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
