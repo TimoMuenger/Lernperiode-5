@@ -16,8 +16,8 @@ namespace CookieClicker
         private int clickPowerUpgrades = 0;
         private int rebirths = 0;
         private int rebirthCost = 1500000;
-        private string spielstandName;
         private System.Windows.Forms.Timer autoClickerTimer;
+        private string spielstandName = "";
         private SqliteConnection connection;
 
 
@@ -111,29 +111,86 @@ namespace CookieClicker
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO Spielstand (Spielstandname, Cookies, cookiesPerClick, clickPowerCost, autoClicker, autoClickerCost, clickPowerUpgrades, rebirths, rebirthCost) " +
-            $"VALUES ({spielstandName}, {cookies}, {cookiesPerClick}, {clickPowerCost}, {autoClickers}, {autoClickerCost}, {clickPowerUpgrades}, {rebirths}, {rebirthCost});"; 
-            SqliteCommand cmd = new SqliteCommand(query, connection);
-            cmd.ExecuteNonQuery();
-            
+            spielstandName = txtSpielstandName.Text;
+
+            if (string.IsNullOrWhiteSpace(spielstandName))
+            {
+                MessageBox.Show("Bitte gib einen Namen für den Spielstand ein.");
+                return;
+            }
+
+            string query = @"
+        INSERT OR REPLACE INTO Spielstand 
+        (Spielstandname, Cookies, cookiesPerClick, clickPowerCost, autoClicker, autoClickerCost, clickPowerUpgrades, rebirths, rebirthCost) 
+        VALUES 
+        (@Spielstandname, @Cookies, @CookiesPerClick, @ClickPowerCost, @AutoClicker, @AutoClickerCost, @ClickPowerUpgrades, @Rebirths, @RebirthCost);";
+
+            using (SqliteCommand cmd = new SqliteCommand(query, connection))
+            {
+                cmd.Parameters.AddWithValue("@Spielstandname", spielstandName);
+                cmd.Parameters.AddWithValue("@Cookies", cookies);
+                cmd.Parameters.AddWithValue("@CookiesPerClick", cookiesPerClick);
+                cmd.Parameters.AddWithValue("@ClickPowerCost", clickPowerCost);
+                cmd.Parameters.AddWithValue("@AutoClicker", autoClickers);
+                cmd.Parameters.AddWithValue("@AutoClickerCost", autoClickerCost);
+                cmd.Parameters.AddWithValue("@ClickPowerUpgrades", clickPowerUpgrades);
+                cmd.Parameters.AddWithValue("@Rebirths", rebirths);
+                cmd.Parameters.AddWithValue("@RebirthCost", rebirthCost);
+
+                cmd.ExecuteNonQuery();
+            }
+
+            MessageBox.Show("Spielstand gespeichert!");
         }
 
         private void btnload_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * CookieClickerdb.db";
-            SqliteCommand cmd = new SqliteCommand(query, connection);
-            SqliteDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
+            spielstandName = txtSpielstandName.Text;
+
+            if (string.IsNullOrWhiteSpace(spielstandName))
             {
-                string cookies = reader["Cookies"].ToString();
-                string cookiesPerClick = reader["cookiesPerClick"].ToString();
-                string clickPowerCost = reader["clickPowerCost"].ToString();
-                string autoClicker = reader["autoClicker"].ToString();
-                string autoClickerCost = reader["autoClickerCost"].ToString();
-                string clickPowerUpgrades = reader["clickPowerUpgrades"].ToString();
-                string rebirths = reader["rebirths"].ToString();
-                string rebirthCost = reader["rebirthCost"].ToString();
+                MessageBox.Show("Bitte gib den Namen des Spielstands ein.");
+                return;
             }
+
+            string query = "SELECT * FROM Spielstand WHERE Spielstandname = @Spielstandname LIMIT 1";
+            using (SqliteCommand cmd = new SqliteCommand(query, connection))
+            {
+                cmd.Parameters.AddWithValue("@Spielstandname", spielstandName);
+
+                using (SqliteDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        cookies = Convert.ToInt32(reader["Cookies"]);
+                        cookiesPerClick = Convert.ToInt32(reader["cookiesPerClick"]);
+                        clickPowerCost = Convert.ToInt32(reader["clickPowerCost"]);
+                        autoClickers = Convert.ToInt32(reader["autoClicker"]);
+                        autoClickerCost = Convert.ToInt32(reader["autoClickerCost"]);
+                        clickPowerUpgrades = Convert.ToInt32(reader["clickPowerUpgrades"]);
+                        rebirths = Convert.ToInt32(reader["rebirths"]);
+                        rebirthCost = Convert.ToInt32(reader["rebirthCost"]);
+
+                        UpdateLabels();
+                        MessageBox.Show("Spielstand geladen!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Kein Spielstand mit diesem Namen gefunden.");
+                    }
+                }
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Du kannst deinen Spielstand speichern in dem du in dem Textfeld unten einen Namen für den Spielstand eingibst und dann auf safe drückst." +
+                " Um einen alten Spielstand zu laden musst du den Namen des Spielstands wieder in die Textbox eingeben und dann auf load klicken.");
+        }
+
+        private void txtSpielstandName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
