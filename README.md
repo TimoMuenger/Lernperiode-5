@@ -28,20 +28,16 @@ Jetzt bin ich gerade dran, einen save und load button zu programmieren, um die S
 
 ## 16.5 Kernfunktionalität und Ausbau
 
-- [ ] Save button Fehler beheben und fertig programmieren
-- [ ] Load button Fehler beheben und fertig programmieren
-- [ ] Machen, dass man den Spielstandnamen eingeben kann, um zu speichern
+- [x] Save button Fehler beheben und fertig programmieren
+- [x] Load button Fehler beheben und fertig programmieren
+- [x] Machen, dass man den Spielstandnamen eingeben kann, um zu speichern
 
-✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
+✍️ Heute habe ich alles für meine kernfunktionalität hinzugefügt und der Cookieclicker hat auch funktioniert mit dem Speichern von date. Allerdings habe ich danach wahrscheinlich etwas falsches gelösch, was einen Fehler in der Datenbank gibt. Im Notfall müsste ich eine komplett neue Tabelle erstellen was allerding auch kein grosses Problem sein sollte.
 
 ## 23.5 Abschluss
 
-- [ ] ...
-- [ ] ... (falls Ihnen nichts einfällt: Können Sie mit einem PowerShell-Skript von Ihrer Datenbank regelmäßig ein *backup* erstellen?)
-- [ ] Reflexion über Ihre Arbeitsweise
-- [ ] Beschreibung des fertigen Projekts mit .gif etc.
+- [ ] Fehler in der Datenbank beheben
+- [ ] Fertig auspolieren bzw. Projekt beenden
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
