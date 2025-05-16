@@ -30,7 +30,7 @@ Jetzt bin ich gerade dran, einen save und load button zu programmieren, um die S
 
 - [ ] Save button Fehler beheben und fertig programmieren
 - [ ] Load button Fehler beheben und fertig programmieren
-- [ ] Machen, dass man den Spielstandnamen eingeben um zu speichern
+- [ ] Machen, dass man den Spielstandnamen eingeben kann, um zu speichern
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
