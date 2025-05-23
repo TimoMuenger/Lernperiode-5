@@ -27,7 +27,7 @@ namespace CookieClicker
             InitializeComponent();
             SetupAutoClicker();
             UpdateLabels();
-            connection = new SqliteConnection("Data Source=..\\..\\..\\CookieCLickerdb.db");
+            connection = new SqliteConnection("Data Source=..\\..\\..\\CookieCLicker_db.db");
             connection.Open();
 
         }
@@ -172,7 +172,7 @@ namespace CookieClicker
                         rebirthCost = Convert.ToInt32(reader["rebirthCost"]);
 
                         UpdateLabels();
-                        MessageBox.Show("Spielstand geladen!");
+                        MessageBox.Show("Spielstand geladen");
                     }
                     else
                     {
@@ -181,13 +181,6 @@ namespace CookieClicker
                 }
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Du kannst deinen Spielstand speichern in dem du in dem Textfeld unten einen Namen für den Spielstand eingibst und dann auf safe drückst." +
-                " Um einen alten Spielstand zu laden musst du den Namen des Spielstands wieder in die Textbox eingeben und dann auf load klicken.");
-        }
-
         private void txtSpielstandName_TextChanged(object sender, EventArgs e)
         {
 

@@ -24,7 +24,6 @@ namespace CookieClicker
             btnload = new Button();
             btnsave = new Button();
             txtSpielstandName = new TextBox();
-            label1 = new Label();
             SuspendLayout();
             // 
             // lblCookies
@@ -135,23 +134,11 @@ namespace CookieClicker
             // txtSpielstandName
             // 
             txtSpielstandName.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold);
-            txtSpielstandName.Location = new Point(87, 36);
+            txtSpielstandName.Location = new Point(87, 51);
             txtSpielstandName.Name = "txtSpielstandName";
-            txtSpielstandName.Size = new Size(81, 24);
+            txtSpielstandName.Size = new Size(80, 24);
             txtSpielstandName.TabIndex = 12;
             txtSpielstandName.TextChanged += txtSpielstandName_TextChanged;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Snow;
-            label1.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold);
-            label1.Location = new Point(12, 18);
-            label1.Name = "label1";
-            label1.Size = new Size(239, 16);
-            label1.TabIndex = 13;
-            label1.Text = "Wie funktioniert das safen und Loaden?";
-            label1.Click += label1_Click;
             // 
             // Form1
             // 
@@ -159,7 +146,6 @@ namespace CookieClicker
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(612, 450);
-            Controls.Add(label1);
             Controls.Add(txtSpielstandName);
             Controls.Add(btnsave);
             Controls.Add(btnload);
@@ -180,6 +166,5 @@ namespace CookieClicker
         private Button btnload;
         private Button btnsave;
         private TextBox txtSpielstandName;
-        private Label label1;
     }
 }
