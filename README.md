@@ -45,6 +45,7 @@ Jetzt bin ich gerade dran, einen save und load button zu programmieren, um die S
 ## Fertiges Projekt
 
 ✍️ Mein Fertiges Projekt ist ein Cookie Clicker mit einer safe und load Funktion.
+
 ![CookieClicker](https://github.com/user-attachments/assets/1ed13f61-af38-45c5-90b5-c8a5891440d8)
 
 
