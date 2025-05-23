@@ -45,9 +45,9 @@ Jetzt bin ich gerade dran, einen save und load button zu programmieren, um die S
 ## Fertiges Projekt
 
 ✍️ Mein Fertiges Projekt ist ein Cookie Clicker mit einer safe und load Funktion.
-![Uploading CookieClicker.gif…]()
+![CookieClicker](https://github.com/user-attachments/assets/1ed13f61-af38-45c5-90b5-c8a5891440d8)
 
 
 ## Reflexion
 
-✍️ Was ging gut, was ging weniger gut? Was haben Sie gelernt, und was würden Sie bei der nächsten Lernperiode versuchen besser zu machen? Fassen Sie auch einen übergeordneten Vorsatz für Ihr nächstes Jahr im Lernatelier (100 bis 200 Wörter).
+✍️ In dieser kurzen LP ist mir alles sehr gut gelungen. Auch konnte ich mein SQL Wissen vertiefen
