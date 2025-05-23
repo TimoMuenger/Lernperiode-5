@@ -36,16 +36,17 @@ Jetzt bin ich gerade dran, einen save und load button zu programmieren, um die S
 
 ## 23.5 Abschluss
 
-- [ ] Fehler in der Datenbank beheben
-- [ ] Fertig auspolieren bzw. Projekt beenden
+- [x] Fehler in der Datenbank beheben
+- [x] Fertig auspolieren bzw. Projekt beenden
 
-✍️ Heute habe ich... (50-100 Wörter)
+✍️ Heute habe eine neue Datenbank erstellt und diese dann mit dem Code verbunden, weil ich nicht wusste was bei der alten der Fehler war bzw. wie ich ihn beheben soll. Jetzt funktioniert alles wider und mein Projekt ist fertig.
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
 
 ## Fertiges Projekt
 
-✍️ Beschreiben Sie hier, wie Ihr Projekt am Ende aussieht, und fügen Sie mindestens ein .gif ein.
+✍️ Mein Fertiges Projekt ist ein Cookie Clicker mit einer safe und load Funktion.
+![Uploading CookieClicker.gif…]()
+
 
 ## Reflexion
 
